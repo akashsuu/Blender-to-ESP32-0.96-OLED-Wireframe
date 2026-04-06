@@ -124,47 +124,7 @@ See **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** for a full list of errors and f
 ├── TROUBLESHOOTING.md                 # Error reference guide
 └── README.md
 ```
-Blender / pyserial Errors
 
-❌ Could not open connection — check port/IP in the panel
-Cause: pyserial is not installed in Blender's Python, or another program is holding the port.
-Fix A — Install pyserial into Blender's Python
-Blender ships with its own isolated Python. Installing pyserial with your system pip does not affect Blender. You must install it through Blender's Python Console:
-Open the Python Console editor in Blender and paste:
-pythonimport subprocess, sys
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install",
-    "--target",
-    r"C:\Users\YOUR_USERNAME\AppData\Roaming\Blender Foundation\Blender\4.5\extensions\.local\lib\python3.11\site-packages",
-    "pyserial"
-])
-Replace YOUR_USERNAME with your actual Windows username. Then verify:
-pythonimport serial
-print("OK:", serial.__version__)
-If it prints a version number, pyserial is ready.
-Fix B — Close Arduino IDE
-Only one program can hold a serial port at a time. Close Arduino IDE (especially its Serial Monitor) before running the Blender script.
-
-❌ ModuleNotFoundError: No module named 'serial'
-Cause: pyserial installed to system Python, not Blender's Python.
-Diagnosis: Run in Blender's Python Console:
-pythonimport sys
-print(sys.executable)   # Should show Blender's python.exe path
-for p in sys.path:
-    print(p)
-Fix: Use the --target flag to install directly into a folder that's in Blender's sys.path (see fix above). The correct target path will be visible in the sys.path output — look for a path containing extensions\.local\lib\python3.11\site-packages.
-
-❌ Permission error installing to Program Files
-subprocess.CalledProcessError: Command returned non-zero exit status 2
-Cause: C:\Program Files\ is write-protected. pip can't install there without admin rights.
-Fix: Install to the user AppData folder instead (which Blender also checks):
-pythonimport subprocess, sys
-subprocess.check_call([
-    sys.executable, "-m", "pip", "install",
-    "--target",
-    r"C:\Users\YOUR_USERNAME\AppData\Roaming\Blender Foundation\Blender\4.5\extensions\.local\lib\python3.11\site-packages",
-    "pyserial"
-])
 ---
 
 ## How It Works
