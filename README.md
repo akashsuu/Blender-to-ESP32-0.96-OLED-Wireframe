@@ -73,10 +73,8 @@ Replace `YOUR_USERNAME` with your Windows username. On Mac/Linux the path will d
 - Optional auto-rotation on the OLED
 - N-panel UI inside Blender's 3D Viewport
   
-<img width="299" height="386" alt="image3" src="https://github.com/user-attachments/assets/54ac50d8-9ac2-445b-bf43-3a21268a8e36" />
+<img width="299" height="386" alt="image3" src="https://github.com/user-attachments/assets/54ac50d8-9ac2-445b-bf43-3a21268a8e36" /> <img width="299" height="386" alt="image3" src="https://github.com/user-attachments/assets/9e280538-2c36-41f9-bd07-5be6b8a2f022" />
 <img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/5dc10c8f-b6c8-44fc-a3ac-694e6b782b86" />
-<img width="299" height="386" alt="image3" src="https://github.com/user-attachments/assets/9e280538-2c36-41f9-bd07-5be6b8a2f022" />
-![photo_6239769646760398300_y](https://github.com/user-attachments/assets/9e280538-2c36-41f9-bd07-5be6b8a2f022)
 
 
 ## Configuration
