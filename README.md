@@ -72,8 +72,9 @@ Replace `YOUR_USERNAME` with your Windows username. On Mac/Linux the path will d
 - Orthographic or perspective projection (configurable)
 - Optional auto-rotation on the OLED
 - N-panel UI inside Blender's 3D Viewport
-![Demo](image1.jpg)
----
+  
+---<img width="299" height="386" alt="image3" src="https://github.com/user-attachments/assets/54ac50d8-9ac2-445b-bf43-3a21268a8e36" />
+
 
 ## Configuration
 
