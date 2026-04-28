@@ -1,4 +1,4 @@
-Blender → ESP32 OLED Wireframe
+eBlender → ESP32 OLED Wireframe
 Stream any 3D mesh from Blender to a 128×64 SSD1306 OLED display as a live wireframe — in real time, including Edit Mode changes.
 ```
 Move object in Blender  →  Python script extracts vertices + edges
@@ -111,7 +111,7 @@ See **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** for a full list of errors and f
 - `No serial data received` — charge-only USB cable
 - `ModuleNotFoundError: No module named 'serial'` — pyserial in wrong Python
 - OLED shows only a square — projection and scale fixes
-- Edit Mode not updating live — dependency graph fix
+- Edit Mode not updating live — dependency graph fix.
 
 ---
 
